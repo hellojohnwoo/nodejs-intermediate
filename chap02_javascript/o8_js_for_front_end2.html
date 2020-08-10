@@ -1,0 +1,18 @@
+<!-- Request to Server -->
+<!-- Axios (Library) : Request AJAX -->
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+  (async () => {
+    try {
+      const result = await axios.get('https://www.hellojohnwoo.com/api/get');
+      console.log(result);
+      console.log(result.data);   // {}
+    } catch (error) {
+      console.error(error);
+    }
+  })();
+
+</script>
+

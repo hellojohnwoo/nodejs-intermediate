@@ -1,0 +1,23 @@
+<!-- Request to Server -->
+<!-- Axios (Library) : Request AJAX -->
+
+<!-- POST : It's a method of storing and sending data. (ex) Login or SignUp -->
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+  (async () => {
+    try {
+      const result = await axios.post('https://www.hellojohnwoo.com/api/post/json', {
+        id: 'johnwoo123',
+        birth: 1997,
+      });
+      console.log(result);
+      console.log(result.data);   // {}
+    } catch (error) {
+      console.error(error);
+    }
+  })();
+
+</script>
+
